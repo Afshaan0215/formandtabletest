@@ -36,7 +36,7 @@ function Forms() {
 
   return (
     <div>
-      <h1 className='text-center'>Form</h1>
+      <h1 className='text-center mt-3'>Registration Form</h1>
       <Formik
         initialValues={{ firstname: "", lastname: "", email: "", number: "", qualification: "", address: "", age: "", gender: "", checkbox: "", }}
         validationSchema={validationSchema}
@@ -84,6 +84,9 @@ function Forms() {
                 <option value="BCom">BCom</option>
                 <option value="BTech">BTech</option>
                 <option value="MTech">MTech</option>
+                <option value="MTech">MBA</option>
+                <option value="MTech">MCA</option>
+                <option value="MTech">MSc</option>
               </Field>
               <ErrorMessage name='qualification' />
             </div>
@@ -111,7 +114,7 @@ function Forms() {
           <div className="col-md-12 col-sm-12">
             <div className="form-check text-danger">
               <Field type='checkbox' name='checkbox' />
-              <span className='text-success mx-2'>I have read and agree to the Terms </span>
+              <span className='text-success mx-2'>I have read and agreed to the <span className='text-danger'>Terms</span> and <span className='text-danger'>Conditions</span>.</span>
               <div>
                 <ErrorMessage name='checkbox' />
               </div>

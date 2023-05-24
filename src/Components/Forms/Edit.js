@@ -56,7 +56,7 @@ function Edit() {
             <div className="col-md-12">
                 <div>
                     <div className="card-body">
-                        <h1 className="card-title text-center">Edit</h1>
+                        <h1 className="card-title text-center">Edit Form</h1>
                         <Formik
                             initialValues={initialValues}
                             validationSchema={validationSchema}
@@ -138,7 +138,7 @@ function Edit() {
                                 </div>
                                 <div className='mt-3 ms-3'>
                                     <div className="col-md-12 col-sm-12">
-                                        <button className='btn btn-primary' type="submit">Update</button>
+                                        <button className='btn btn-dark' type="submit">Update</button>
                                     </div>
                                 </div>
                             </Form>
